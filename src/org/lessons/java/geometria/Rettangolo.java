@@ -36,4 +36,25 @@ public class Rettangolo {
 		System.out.println(info);
 	}
 	
+	public void draw() {
+		for (int i = 0; i < this.base; i++) {
+			System.out.print("O");
+		}
+		
+		System.out.println();
+		
+		for (int i = 0; i < this.height-2; i++) {
+			String whiteSpaces = "";
+			for (int x = 0; x < this.base-2; x++) {
+				whiteSpaces += " ";
+			}
+			System.out.println("O" + whiteSpaces + "O");
+		}
+		
+		for (int i = 0; i < this.base; i++) {
+			System.out.print("O");
+		}
+		
+	}
+	
 }

@@ -18,13 +18,19 @@ public class Main {
 			rettangoli[i] = new Rettangolo(base, height);
 		}
 		
+		sc.close();
+		
 		for (int i = 0; i < rettangoli.length; i++) {
 			rettangoli[i].calcolaPerimetro();
 			rettangoli[i].calcoloArea();
 			rettangoli[i].printInfo(i+1);
 			rettangoli[i].printMath();
+			rettangoli[i].draw();
 			System.out.println("\n-------------------------");
 		}
+		
+
+		
 		
 		
 	}
